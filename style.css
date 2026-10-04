@@ -114,3 +114,4 @@ blockquote footer{font-family:var(--sans);font-size:.95rem;margin-top:16px;opaci
 .site-footer ul{list-style:none;padding:0;margin:0}.site-footer li{margin:6px 0}
 .site-footer .fine{border-top:1px solid color-mix(in srgb,var(--navy-ink) 18%,transparent);margin-top:40px;padding-top:20px;opacity:.75;font-size:.88rem}
 @media (max-width:760px){.footer-grid{grid-template-columns:1fr}}
+.prose .card{margin:16px 0}
