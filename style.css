@@ -141,3 +141,7 @@ p a[href^="tel:"],p a[href^="sms:"],li a[href^="tel:"],li a[href^="sms:"],a.more
 .video-block h2{margin-top:6px}
 .site-video{width:100%;height:auto;aspect-ratio:1/1;display:block;margin-top:20px;border-radius:var(--radius);background:#0d1620;box-shadow:var(--shadow)}
 .video-block .source{margin-top:14px;text-align:left}
+.transcript{margin-top:10px;text-align:left;border-top:1px solid var(--line);padding-top:10px}
+.transcript summary{cursor:pointer;font-weight:600;color:var(--accent-dark);padding:8px 0}
+.transcript p{margin:10px 0;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.site-video{outline:none}}
