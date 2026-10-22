@@ -1,3 +1,5 @@
+@font-face{font-family:'Literata';src:url('/fonts/literata.woff2') format('woff2');font-weight:500 600;font-style:normal;font-display:swap}
+@font-face{font-family:'Inter';src:url('/fonts/inter.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 :root{
   --bg:#f6f1ea; --bg-alt:#ede5d9; --card:#fffdf9; --ink:#1d2a36; --muted:#56636f;
   --navy:#1f3a4d; --navy-ink:#f6f1ea; --accent:#c8693f; --accent-dark:#9a4826; --accent-hover:#7f3a1e; --accent-ink:#fff;
