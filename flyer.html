@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Print this flyer | Postpartum Fathers</title>
+<meta name="description" content="A free one-page flyer about postpartum depression in dads. Print it and leave it at your pediatrician's office, your OB's office or a birth class.">
+<link rel="canonical" href="https://postpartumfathers.org/flyer.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96"><link rel="icon" href="/logo.svg?v=2" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Literata';src:url('/fonts/literata.woff2') format('woff2');font-weight:500 600;font-style:normal;font-display:swap}
+@font-face{font-family:'Inter';src:url('/fonts/inter.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+:root{--ink:#1d2a36;--muted:#4a5560;--accent:#9a4826;--line:#d8cfc2;--navy:#1f3a4d;
+--serif:"Literata",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e4dc;color:var(--ink);font:16px/1.6 var(--sans)}
+.bar{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px;text-align:center}
+.bar p{margin:0 0 10px;font-size:.95rem;color:var(--muted);max-width:60ch;margin-inline:auto}
+.bar a.home{color:var(--accent);font-weight:600}
+.btn{display:inline-block;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:12px 22px;
+font:600 1rem/1 var(--sans);cursor:pointer;text-decoration:none;margin:2px}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.sheet{width:8.5in;min-height:11in;margin:24px auto;background:#fff;padding:0.7in 0.75in;
+box-shadow:0 2px 18px rgba(0,0,0,.16);display:flex;flex-direction:column}
+.head{display:flex;align-items:center;gap:14px;border-bottom:1.5px solid var(--line);padding-bottom:14px}
+.head img{width:62px;height:62px;flex:none}
+.head h1{margin:0;font:600 1.45rem/1.1 var(--serif);letter-spacing:.02em;text-transform:uppercase}
+.head p{margin:3px 0 0;font-size:.85rem;color:var(--muted)}
+h2{font:600 2.3rem/1.12 var(--serif);margin:26px 0 12px;max-width:14ch}
+.lead{font-size:1.02rem;margin:0;max-width:62ch}
+ul.signs{list-style:none;padding:0;margin:22px 0 0;columns:2;column-gap:28px}
+ul.signs li{margin:0 0 9px;padding-left:18px;position:relative;break-inside:avoid;font-size:1rem}
+ul.signs li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.scan{margin-top:auto;display:flex;gap:22px;align-items:center;border:1.5px solid var(--line);border-radius:14px;padding:18px 20px}
+.scan svg{width:1.55in;height:1.55in;flex:none}
+.scan h3{margin:0 0 6px;font:600 1.15rem/1.2 var(--serif)}
+.scan p{margin:0;font-size:.95rem;color:var(--muted)}
+.scan .url{display:block;margin-top:8px;font-weight:700;color:var(--accent);font-size:1rem}
+.crisis{margin-top:18px;background:var(--navy);color:#fff;border-radius:12px;padding:14px 18px;font-size:.9rem;line-height:1.5}
+.crisis strong{color:#ffd9a8}
+@media print{
+  body{background:#fff}
+  .bar{display:none}
+  .sheet{width:auto;min-height:0;margin:0;padding:0;box-shadow:none}
+  .scan{margin-top:34px}
+  h2{margin-top:20px}
+  .scan{page-break-inside:avoid}
+  .crisis{page-break-inside:avoid}
+  @page{size:letter;margin:0.6in}
+}
+@media screen and (max-width:900px){.sheet{width:auto;min-height:0;padding:28px 22px;margin:16px}h2{font-size:1.9rem}ul.signs{columns:1}.scan{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="bar">
+<p>Print this and leave it where dads actually are: your pediatrician&rsquo;s office, your OB&rsquo;s office, a birth class, a break room. Almost nobody hands the dad anything.</p>
+<button class="btn" onclick="window.print()">Print this flyer</button>
+<a class="btn ghost" href="/flyer.pdf">Download the PDF</a>
+<p style="margin-top:12px"><a class="home" href="/">Back to postpartumfathers.org</a></p>
+</div>
+
+<div class="sheet">
+<div class="head">
+<img src="/logo.svg" alt="" width="62" height="62">
+<div><h1>Postpartum Fathers</h1><p>Support. Community. Shared Strength.</p></div>
+</div>
+
+<h2>Dads go through postpartum too.</h2>
+<p class="lead">About 1 in 10 new fathers become depressed after a baby arrives, and dads whose partners have postpartum depression are at even higher risk. It&rsquo;s common, it&rsquo;s treatable, and you don&rsquo;t have to figure it out alone.</p>
+
+<ul class="signs">
+<li>Short temper or anger</li>
+<li>Drinking or escaping more</li>
+<li>Pulling away from family</li>
+<li>Feeling numb or hopeless</li>
+<li>Working late to avoid home</li>
+<li>Worried about your partner</li>
+</ul>
+
+<div class="scan">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29" shape-rendering="crispEdges" role="img" aria-label="QR code linking to postpartumfathers.org"><rect width="29" height="29" fill="#fff"/><path fill="#1d2a36" d="M0 0h7v1h-7zM9 0h1v1h-1zM11 0h1v1h-1zM14 0h1v1h-1zM18 0h2v1h-2zM22 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h1v1h-1zM10 1h2v1h-2zM13 1h1v1h-1zM17 1h3v1h-3zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM9 2h1v1h-1zM15 2h1v1h-1zM20 2h1v1h-1zM22 2h1v1h-1zM24 2h3v1h-3zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM9 3h3v1h-3zM13 3h1v1h-1zM16 3h1v1h-1zM18 3h1v1h-1zM22 3h1v1h-1zM24 3h3v1h-3zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM8 4h2v1h-2zM11 4h1v1h-1zM13 4h1v1h-1zM16 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h3v1h-3zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM9 5h2v1h-2zM12 5h1v1h-1zM14 5h3v1h-3zM19 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h7v1h-7zM10 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h2v1h-2zM0 8h1v1h-1zM2 8h1v1h-1zM4 8h1v1h-1zM6 8h1v1h-1zM9 8h3v1h-3zM16 8h2v1h-2zM24 8h1v1h-1zM27 8h1v1h-1zM0 9h2v1h-2zM5 9h1v1h-1zM7 9h1v1h-1zM10 9h1v1h-1zM12 9h2v1h-2zM15 9h4v1h-4zM20 9h1v1h-1zM22 9h1v1h-1zM25 9h1v1h-1zM28 9h1v1h-1zM1 10h4v1h-4zM6 10h2v1h-2zM14 10h5v1h-5zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h3v1h-3zM0 11h1v1h-1zM2 11h2v1h-2zM7 11h5v1h-5zM13 11h2v1h-2zM16 11h4v1h-4zM21 11h1v1h-1zM27 11h1v1h-1zM0 12h2v1h-2zM3 12h2v1h-2zM6 12h2v1h-2zM9 12h3v1h-3zM14 12h2v1h-2zM17 12h2v1h-2zM20 12h4v1h-4zM25 12h1v1h-1zM27 12h2v1h-2zM0 13h1v1h-1zM2 13h1v1h-1zM7 13h5v1h-5zM14 13h2v1h-2zM20 13h3v1h-3zM25 13h1v1h-1zM28 13h1v1h-1zM0 14h1v1h-1zM2 14h3v1h-3zM6 14h1v1h-1zM8 14h1v1h-1zM12 14h2v1h-2zM17 14h1v1h-1zM20 14h1v1h-1zM22 14h2v1h-2zM25 14h1v1h-1zM27 14h2v1h-2zM0 15h1v1h-1zM3 15h2v1h-2zM8 15h2v1h-2zM12 15h1v1h-1zM15 15h1v1h-1zM17 15h1v1h-1zM20 15h1v1h-1zM23 15h1v1h-1zM25 15h1v1h-1zM27 15h1v1h-1zM2 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM10 16h1v1h-1zM16 16h2v1h-2zM20 16h4v1h-4zM25 16h1v1h-1zM27 16h2v1h-2zM2 17h1v1h-1zM4 17h2v1h-2zM9 17h1v1h-1zM12 17h2v1h-2zM15 17h2v1h-2zM20 17h1v1h-1zM22 17h1v1h-1zM25 17h2v1h-2zM28 17h1v1h-1zM0 18h1v1h-1zM2 18h2v1h-2zM6 18h1v1h-1zM9 18h1v1h-1zM11 18h1v1h-1zM14 18h4v1h-4zM22 18h2v1h-2zM27 18h2v1h-2zM1 19h2v1h-2zM4 19h1v1h-1zM7 19h1v1h-1zM12 19h3v1h-3zM16 19h7v1h-7zM24 19h2v1h-2zM27 19h1v1h-1zM0 20h1v1h-1zM2 20h3v1h-3zM6 20h1v1h-1zM9 20h2v1h-2zM14 20h2v1h-2zM17 20h1v1h-1zM19 20h6v1h-6zM8 21h1v1h-1zM11 21h1v1h-1zM14 21h2v1h-2zM17 21h4v1h-4zM24 21h1v1h-1zM26 21h3v1h-3zM0 22h7v1h-7zM12 22h2v1h-2zM17 22h4v1h-4zM22 22h1v1h-1zM24 22h2v1h-2zM27 22h2v1h-2zM0 23h1v1h-1zM6 23h1v1h-1zM9 23h1v1h-1zM15 23h1v1h-1zM17 23h1v1h-1zM20 23h1v1h-1zM24 23h2v1h-2zM0 24h1v1h-1zM2 24h3v1h-3zM6 24h1v1h-1zM8 24h4v1h-4zM16 24h2v1h-2zM20 24h5v1h-5zM27 24h1v1h-1zM0 25h1v1h-1zM2 25h3v1h-3zM6 25h1v1h-1zM9 25h1v1h-1zM13 25h1v1h-1zM15 25h3v1h-3zM23 25h2v1h-2zM26 25h1v1h-1zM0 26h1v1h-1zM2 26h3v1h-3zM6 26h1v1h-1zM8 26h1v1h-1zM12 26h2v1h-2zM15 26h3v1h-3zM19 26h3v1h-3zM23 26h3v1h-3zM28 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM9 27h2v1h-2zM12 27h1v1h-1zM14 27h1v1h-1zM16 27h3v1h-3zM20 27h1v1h-1zM23 27h1v1h-1zM27 27h1v1h-1zM0 28h7v1h-7zM8 28h2v1h-2zM11 28h1v1h-1zM15 28h2v1h-2zM18 28h3v1h-3zM22 28h1v1h-1zM24 28h2v1h-2zM27 28h2v1h-2z"/></svg>
+<div>
+<h3>Scan for free support</h3>
+<p>Short guides for dads, how to help your partner, and a message board where fathers talk honestly. No ads, nothing for sale.</p>
+<span class="url">postpartumfathers.org</span>
+</div>
+</div>
+
+<div class="crisis">
+<strong>In crisis? Call or text 988 any time. Emergency: 911.</strong><br>
+Postpartum Support International HelpLine: 1-800-944-4773 &middot; National Maternal Mental Health Hotline: 1-833-852-6262
+</div>
+</div>
+</body></html>
