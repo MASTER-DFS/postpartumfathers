@@ -1,21 +1,21 @@
 @font-face{font-family:'Literata';src:url('/fonts/literata.woff2') format('woff2');font-weight:500 600;font-style:normal;font-display:swap}
 @font-face{font-family:'Inter';src:url('/fonts/inter.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 :root{
-  --bg:#f7f9fb; --bg-alt:#e8edf1; --card:#fff; --ink:#111b24; --muted:#36434f;
+  --bg:#f7f9fb; --bg-alt:#e8edf1; --card:#fff; --ink:#111b24; --muted:#2c3843;
   --navy:#1f3a4d; --navy-ink:#f3f5f7; --accent:#3d6f94; --accent-dark:#2b5876; --accent-hover:#1f4560; --accent-ink:#fff;
   --sage:#4a6654; --line:#cdd5dc; --header-bg:#1f3a4d; --header-ink:#f3f5f7; --gold:#f2c14e; --gold-ink:#14212b; --alert:#8f2d22; --alert-bg:#f9e3dc;
   --radius:16px; --shadow:0 1px 2px rgba(29,42,54,.06),0 8px 24px rgba(29,42,54,.06);
   --serif:"Literata",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#131b22; --bg-alt:#18222b; --card:#1c2731; --ink:#ece6dd; --muted:#a6b0b8;
+  --bg:#10171d; --bg-alt:#18222b; --card:#1c2731; --ink:#f4f0ea; --muted:#cfd6dc;
   --navy:#0e171e; --navy-ink:#ece6dd; --accent:#7fb0d6; --accent-dark:#9cc4e4; --accent-hover:#b8d6ee; --accent-ink:#0e171e; --header-bg:#0e171e; --header-ink:#ece6dd;
   --sage:#8fb09a; --line:#2b3843; --alert:#ffc2b3; --alert-bg:#3a201b; --shadow:none;
 }}
 *{box-sizing:border-box}
 html{scroll-padding-top:84px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%}
 .nowrap{white-space:nowrap}
 a{color:var(--accent-dark)}
@@ -58,7 +58,7 @@ h2{font-size:clamp(1.6rem,3vw,2.2rem)}
 h3,.h3{font-size:1.3rem}
 p{margin:0 0 1em}
 .eyebrow{display:inline-block;font-size:.875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:12px}
-.lead{font-size:clamp(1.08rem,2vw,1.25rem);color:var(--muted);max-width:62ch}
+.lead{font-size:clamp(1.1rem,2vw,1.25rem);color:var(--ink);max-width:62ch}
 .source{font-size:.85rem;color:var(--muted)}
 .note{margin-top:16px;font-size:.95rem;color:var(--muted);max-width:62ch}
 
@@ -168,7 +168,7 @@ html{scroll-behavior:smooth}
 [id]{scroll-margin-top:96px}
 
 /* Option C 2026-10-31: navy header, blue buttons, gold crisis banner */
-.crisis-bar{background:var(--gold);color:var(--gold-ink);font-weight:500}
+.crisis-bar{background:var(--gold);color:var(--gold-ink);font-weight:500;font-size:.95rem}
 .crisis-bar a{color:var(--gold-ink)}
 .site-header{background:var(--header-bg);backdrop-filter:none;border-bottom-color:var(--header-bg)}
 .site-header .brand,.site-header .nav a,.site-header .menu-btn{color:var(--header-ink)}
