@@ -1,7 +1,7 @@
 @font-face{font-family:'Literata';src:url('/fonts/literata.woff2') format('woff2');font-weight:500 600;font-style:normal;font-display:swap}
 @font-face{font-family:'Inter';src:url('/fonts/inter.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 :root{
-  --bg:#f7f9fb; --bg-alt:#e8edf1; --card:#fff; --ink:#111b24; --muted:#2c3843;
+  --bg:#f7f9fb; --bg-alt:#e8edf1; --card:#fff; --ink:#0a1016; --muted:#1f2a35;
   --navy:#1f3a4d; --navy-ink:#f3f5f7; --accent:#3d6f94; --accent-dark:#2b5876; --accent-hover:#1f4560; --accent-ink:#fff;
   --sage:#4a6654; --line:#cdd5dc; --header-bg:#1f3a4d; --header-ink:#f3f5f7; --gold:#f2c14e; --gold-ink:#14212b; --alert:#8f2d22; --alert-bg:#f9e3dc;
   --radius:16px; --shadow:0 1px 2px rgba(29,42,54,.06),0 8px 24px rgba(29,42,54,.06);
@@ -15,7 +15,7 @@
 *{box-sizing:border-box}
 html{scroll-padding-top:84px}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 var(--sans);font-weight:500}
 img,svg{max-width:100%}
 .nowrap{white-space:nowrap}
 a{color:var(--accent-dark)}
