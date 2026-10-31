@@ -184,3 +184,9 @@ html{scroll-behavior:smooth}
 .tonight .tonight-h{font-weight:700;font-size:1.05rem;margin:0 0 6px;color:var(--ink)}
 .tonight ul{margin:0 0 10px;padding-left:1.15em}
 .tonight li{margin:0 0 8px}
+
+/* full site pass 2026-10-31: readable links on navy sections, larger small print, 44px logo tap target */
+.dark a:not(.btn){color:var(--navy-ink)}
+.source{font-size:.9rem}
+.help-card .tag{font-size:.875rem}
+.site-header .brand{min-height:44px}
