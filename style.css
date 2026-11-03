@@ -190,3 +190,6 @@ html{scroll-behavior:smooth}
 .source{font-size:.9rem}
 .help-card .tag{font-size:.875rem}
 .site-header .brand{min-height:44px}
+.lang-link{margin-left:auto;color:var(--header-ink);font-weight:600;font-size:.95rem;text-decoration:underline;text-underline-offset:3px;padding:10px 6px;white-space:nowrap}
+.lang-link + .header-cta{margin-left:0}
+@media (min-width:821px){.lang-link{margin-left:auto;margin-right:-8px}.site-header .nav{margin-left:0}}
