@@ -1,0 +1,52 @@
+/* One-page clinic flyer (flyer.html and es/flyer.html). Letter size, reads in color or black and white. */
+@font-face{font-family:'Literata';src:url('/fonts/literata.woff2') format('woff2');font-weight:500 600;font-style:normal;font-display:swap}
+@font-face{font-family:'Inter';src:url('/fonts/inter.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+:root{--ink:#0a1016;--muted:#38434e;--accent:#1f3a4d;--line:#9aa6b1;--gold:#f2c46d;
+--serif:"Literata",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#e2e7eb;color:var(--ink);font:16px/1.5 var(--sans)}
+.bar{background:#fff;border-bottom:1px solid var(--line);padding:14px 16px;text-align:center}
+.bar p{margin:0 auto 10px;font-size:1rem;color:var(--muted);max-width:60ch}
+.bar a{color:#2b5876;font-weight:600}
+.btn{display:inline-block;background:#2b5876;color:#fff!important;border:0;border-radius:999px;padding:13px 22px;
+font:600 1rem/1 var(--sans);cursor:pointer;text-decoration:none;margin:3px;min-height:44px}
+.btn.ghost{background:transparent;color:#2b5876!important;border:1.5px solid #2b5876}
+.sheet{width:8.5in;min-height:11in;margin:24px auto;background:#fff;padding:0.55in 0.65in;
+box-shadow:0 2px 18px rgba(0,0,0,.16);display:flex;flex-direction:column}
+.head{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--accent);padding-bottom:10px}
+.head img{width:54px;height:54px;flex:none}
+.head p{margin:0;font-size:.9rem;color:var(--muted)}
+.head .name{font:600 1.3rem/1.1 var(--serif);letter-spacing:.03em;text-transform:uppercase;color:var(--accent)}
+h1{font:600 2.6rem/1.08 var(--serif);margin:22px 0 10px;color:var(--accent)}
+.lead{font-size:1.1rem;margin:0;max-width:60ch}
+.mid{display:flex;gap:26px;align-items:center;margin-top:20px}
+.feel{flex:1}
+.feel h2{font:600 1.3rem/1.2 var(--serif);margin:0 0 8px}
+.feel ul{margin:0;padding:0;list-style:none}
+.feel li{font-size:1.15rem;margin:0 0 7px;padding-left:20px;position:relative}
+.feel li::before{content:"";position:absolute;left:0;top:.5em;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.small{font-size:.95rem;color:var(--muted);margin:10px 0 0}
+.qr{flex:none;text-align:center}
+.qr img{display:block;width:2.1in;height:2.1in}
+.qr p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}
+.url{font:700 2.5rem/1 var(--sans);letter-spacing:-.01em;text-align:center;margin:20px 0 0;color:var(--accent);overflow-wrap:anywhere}
+.help{margin-top:auto;border:3px solid var(--accent);border-left-width:12px;border-radius:12px;padding:14px 18px}
+.help p{margin:0 0 8px;font-size:1rem}
+.help p:last-child{margin:0}
+.help .now{font-size:1.15rem}
+.help .big{font-size:1.5rem}
+.nowrap{white-space:nowrap}
+.fine{margin:12px 0 0;font-size:.82rem;color:var(--muted)}
+@media print{
+  body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .bar{display:none}
+  .sheet{width:auto;height:9.85in;min-height:0;margin:0;padding:0;box-shadow:none}
+  .help{page-break-inside:avoid}
+  @page{size:letter;margin:0.55in 0.6in}
+}
+@media screen and (max-width:900px){
+  .sheet{width:auto;min-height:0;padding:24px 16px;margin:16px}
+  h1{font-size:2rem}.url{font-size:1.7rem}
+  .mid{flex-direction:column;align-items:flex-start}
+  .help{margin-top:22px}
+}
