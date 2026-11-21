@@ -251,10 +251,15 @@ html{scroll-behavior:smooth}
 .crisis-bar a{padding:11px 5px;margin:-11px -5px}
 p a[href^="tel:"],p a[href^="sms:"],li a[href^="tel:"],li a[href^="sms:"],a.more[href^="tel:"],a.more[href^="sms:"],.callout a{padding:12px 0}
 .card a.more{display:inline-block;padding:11px 0;margin:-11px 0}
-.card > p > a:only-child,.card > p > strong:only-child > a{display:inline-block;padding:10px 0;margin:-10px 0}
+/* 2026-11-21: padding only, no inline-block, so a link inside a sentence flows with the text and never pushes a comma onto its own line */
+.card > p > a:only-child,.card > p > strong:only-child > a{padding:10px 0}
 .prose .more-list li{margin:0}
 .prose .more-list a{display:inline-block;padding:10px 0}
 @media (max-width:760px){.site-footer li a{display:inline-block;padding:12px 0}}
+/* footer hotline line: keep "(24/7, call or text)" right after the number */
+.site-footer li a[href="tel:18338526262"]{display:inline}
+.site-footer li:has(> a[href="tel:18338526262"]){padding:5px 0}
+@media (max-width:760px){.site-footer li:has(> a[href="tel:18338526262"]){padding:12px 0}}
 /* site search (tools/build_search.py + search.js); hidden when JavaScript is off */
 .site-search[hidden]{display:none}
 .site-search{margin:22px 0 4px;max-width:760px}
